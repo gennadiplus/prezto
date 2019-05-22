@@ -45,3 +45,5 @@ bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 bindkey -s "^[OX" "="
 bindkey -s "^[Ok" "+"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
