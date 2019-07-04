@@ -18,7 +18,8 @@ export KEYTIMEOUT=1
 export PHP_IDE_CONFIG="serverName=localhost"
 export XDEBUG_CONFIG="idekey=PHPSTORM"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 unalias mysql
 
@@ -47,3 +48,9 @@ bindkey -s "^[OX" "="
 bindkey -s "^[Ok" "+"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
