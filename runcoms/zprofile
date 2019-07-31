@@ -44,6 +44,7 @@ cdpath=(
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  $HOME/.composer/vendor/bin
   $HOME/.bin
   /usr/local/{bin,sbin}
   $path
