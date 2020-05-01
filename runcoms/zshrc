@@ -10,6 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+export HISTFILE=~/.zhistory
+
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
   alias vi='nvim'
