@@ -41,7 +41,6 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that cd searches.
 cdpath=(
-  /Volumes/Development/core
   /Volumes/Development
   $cdpath
 )
