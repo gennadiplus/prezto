@@ -22,8 +22,8 @@ fi
 export KEYTIMEOUT=1
 
 # PHPStorm CLI Config
-export PHP_IDE_CONFIG="serverName=localhost"
-export XDEBUG_CONFIG="idekey=PHPSTORM"
+# export PHP_IDE_CONFIG="serverName=localhost"
+export XDEBUG_SESSION="gennadi"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -37,3 +37,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
+
