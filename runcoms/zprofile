@@ -21,7 +21,7 @@ fi
 
 export EDITOR='nvim'
 export VISUAL='nvim'
-export PAGER='less'
+export PAGER='vman'
 
 #
 # Language
@@ -47,9 +47,11 @@ cdpath=(
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  $HOME/.composer/vendor/bin
-  $HOME/.bin
+  /opt/homebrew/{bin,sbin}
   /usr/local/{bin,sbin}
+  $HOME/.bin
+  $HOME/.composer/vendor/bin
+  $HOME/.config/nvim/plugged/vim-superman/bin
   $path
 )
 
